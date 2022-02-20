@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-neutral-100 flex-col text-justify pt-20">
+  <!-- TODO: make header compact for 16:9 13" screens -->
+  <div class="bg-neutral-100 flex-col pt-20 h-screen">
     <div
       class="neumorphic-shadow bg-neutral-100 rounded-3xl grid content-center h-32 w-32 m-auto"
     >
@@ -11,14 +12,20 @@
     >
       RWC Application Form
     </h1>
-    <p class="text-lg text-neutral-500 mt-8 m-auto" style="max-width: 70ch">
+    <p class="text-justify text-lg text-neutral-500 mt-8 m-auto" style="max-width: 70ch">
       &emsp;&emsp;&emsp;&emsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       Obcaecati corrupti at, perspiciatis similique rerum, labore, cumque quos blanditiis
-      minima adipisci optio. Iure, rem tempora. Quisquam unde dolore suscipit soluta atque
-      pariatur, libero, iure quis fugiat necessitatibus dolor perferendis impedit, amet
-      nam laudantium?
+      minima adipisci optio. Iure, rem tempora.
+      <span
+        class="font-bold before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-purple-700 relative inline-block"
+      >
+        <span class="relative text-neutral-100">Quisquam</span>
+      </span>
+      unde dolore suscipit soluta atque pariatur, libero, iure quis fugiat necessitatibus
+      dolor perferendis impedit, amet nam laudantium?
     </p>
-    <div class="mt-20 rounded-t-3xl w-full h-full bg-white py-20">
+    <!-- TODO: adjust width for different screen sizes -->
+    <div class="mt-20 rounded-3xl bg-white m-auto w-1/2">
       <router-view />
     </div>
   </div>
