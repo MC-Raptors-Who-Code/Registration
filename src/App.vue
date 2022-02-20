@@ -20,9 +20,9 @@
   filter: drop-shadow(0 0.5rem 1rem #3a0e66);
   transition-duration: 0.3s;
   transition-property: opacity, transform;
-  transform: scale(0);
+  transform: scale(1.5);
   opacity: 0;
-  animation: popin 0.5s 0.3s ease-out 1 forwards;
+  animation: dropin 0.5s 0.3s ease-out 1 forwards;
 }
 @keyframes popin {
   0% {
@@ -36,6 +36,24 @@
   66% {
     opacity: 1;
     transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes dropin {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  33% {
+    opacity: 1;
+    transform: scale(0.75);
+  }
+  66% {
+    opacity: 1;
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
