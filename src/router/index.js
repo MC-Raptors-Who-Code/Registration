@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Form from "../views/Form.vue";
 import Grats from "../views/Grats.vue";
 
