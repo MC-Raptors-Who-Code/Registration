@@ -1,0 +1,1 @@
+npm run build && rm -rf docs && mv dist docs && sed -i '' 's/"\//"/g' docs/index.html;
