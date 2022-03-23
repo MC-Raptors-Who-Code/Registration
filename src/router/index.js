@@ -17,7 +17,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: [{ path: '/:pathMatch(.*)', component: Form }],
 });
 
 export default router;
