@@ -14,6 +14,10 @@ npm run serve
 ```
 npm run build
 ```
+### Combines build and steps for compatibility with Github Pages hosting
+```
+npm run pages
+```
 
 ### Lints and fixes files
 ```
