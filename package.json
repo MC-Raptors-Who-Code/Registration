@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "pages": "./pages.sh",
+    "pages": "chmod +x pages.sh && ./pages.sh",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
